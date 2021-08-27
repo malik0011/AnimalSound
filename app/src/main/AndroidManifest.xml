@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AnimalBook">
         <activity android:name=".HomeActivity"
-            android:label="Home"></activity>
+            android:label="Home"></activity >
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
