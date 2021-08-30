@@ -26,7 +26,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
+
             android:background="#97FFFBF1"
             android:orientation="vertical"
             tools:context=".HomeActivity">
@@ -52,6 +52,7 @@
                         android:layout_height="match_parent"
                         android:onClick="pngum"
                         android:src="@drawable/pnguin" />
+
 
                 </androidx.cardview.widget.CardView>
 
@@ -214,11 +215,11 @@
                     android:elevation="4dp">
 
                     <ImageView
-                        android:id="@+id/owl"
+                        android:id="@+id/bee"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:onClick="raven"
-                        android:src="@drawable/raven" />
+                        android:onClick="bee"
+                        android:src="@drawable/bee" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -232,8 +233,8 @@
                         android:id="@+id/criket"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:onClick="crow"
-                        android:src="@drawable/crow"
+                        android:onClick="cricket"
+                        android:src="@drawable/cricket"
 
                         />
 
@@ -257,11 +258,11 @@
                     android:elevation="4dp">
 
                     <ImageView
-                        android:id="@+id/snake"
+                        android:id="@+id/locust"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:onClick="raven"
-                        android:src="@drawable/raven" />
+                        android:onClick="locust"
+                        android:src="@drawable/locust" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -272,17 +273,61 @@
                     android:elevation="10dp">
 
                     <ImageView
-                        android:id="@+id/sparow"
+                        android:id="@+id/hornet"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:onClick="crow"
-                        android:src="@drawable/crow"
+                        android:onClick="hornet"
+                        android:src="@drawable/hornet"
 
                         />
 
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seventh"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/grashhopper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="grasshopper"
+                        android:src="@drawable/grasshopper" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:elevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/cicada"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="cicada"
+                        android:src="@drawable/cicada"
+
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
