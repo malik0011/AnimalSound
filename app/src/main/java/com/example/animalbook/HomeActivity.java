@@ -1,6 +1,7 @@
 package com.example.animalbook;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -11,6 +12,15 @@ import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
     MediaPlayer player;
+    CardView pg;
+    CardView lionC;
+    CardView tigerC;
+    CardView hourseC;
+    CardView shimpangiC;
+    CardView peacockC;
+    CardView RavenC;
+    CardView CrowC;
+    CardView CriketC;
     //virtual animal and birds
     int i = 0;
     int j = 0;
@@ -29,6 +39,15 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        pg = (CardView) findViewById(R.id.pg);
+        lionC = (CardView) findViewById(R.id.LionC);
+        tigerC = (CardView) findViewById(R.id.TigerC);
+        hourseC = (CardView) findViewById(R.id.HourseC);
+        shimpangiC = (CardView) findViewById(R.id.shimpangiC);
+        peacockC = (CardView) findViewById(R.id.peacockC);
+        RavenC = (CardView) findViewById(R.id.ravenC);
+        CrowC = (CardView) findViewById(R.id.crowC);
+        CriketC = (CardView) findViewById(R.id.CriketC);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
        // pgu = findViewById(R.id.penguin);
 
@@ -39,6 +58,10 @@ public class HomeActivity extends AppCompatActivity {
     //sound of penguin
     public void pngum(View view) {
         if (i == 0) {
+            pg.setCardElevation(15);
+            pg.setCardBackgroundColor(10000);
+            //just used this fuction to add padding
+            //pg.setPadding(10,10,10,10);
             if (player == null) {
                 player = MediaPlayer.create(this, R.raw.p); // resource of song
                 player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -55,6 +78,8 @@ public class HomeActivity extends AppCompatActivity {
             i = 1;
         } else {
             if (player != null) {
+                pg.setCardElevation(4);
+                pg.setCardBackgroundColor(0);
                 i=0;
                 player.release();
                 player = null;
@@ -68,6 +93,8 @@ public class HomeActivity extends AppCompatActivity {
 
     public void lionSound(View view) {
         if (j == 0) {
+            lionC.setCardElevation(10);
+            lionC.setCardBackgroundColor(658989);
             if (player == null) {
                 player = MediaPlayer.create(this, R.raw.li);
                 player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -83,6 +110,8 @@ public class HomeActivity extends AppCompatActivity {
             player.start();
             j = 1;
         } else {
+            lionC.setCardElevation(4);
+           // lionC.setCardBackgroundColor(0);
             if (player != null) {
                 player.release();
                 player = null;
@@ -94,6 +123,8 @@ public class HomeActivity extends AppCompatActivity {
 
     public void tiger(View view) {
         if (tiger == 0) {
+            tigerC.setCardElevation(15);
+            tigerC.setCardBackgroundColor(10000);
             if (player == null) {
                 player = MediaPlayer.create(this, R.raw.tiger); // resource of song
                 player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -109,6 +140,8 @@ public class HomeActivity extends AppCompatActivity {
             player.start();
             tiger = 1;
         } else {
+            tigerC.setCardElevation(4);
+            tigerC.setCardBackgroundColor(0);
             if (player != null) {
                 tiger=0;
                 player.release();
@@ -126,6 +159,8 @@ public class HomeActivity extends AppCompatActivity {
      //chimp == chimpsnzee
     public void chimpanzee(View view) {
         if (chimp == 0) {
+            shimpangiC.setCardElevation(15);
+            shimpangiC.setCardBackgroundColor(10000);
             if (player == null) {
                 player = MediaPlayer.create(this, R.raw.chimpanse); // resource of song
                 player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -141,6 +176,8 @@ public class HomeActivity extends AppCompatActivity {
             player.start();
             chimp = 1;
         } else {
+            shimpangiC.setCardElevation(4);
+            shimpangiC.setCardBackgroundColor(0);
             if (player != null) {
                 chimp=0;
                 player.release();
@@ -156,6 +193,8 @@ public class HomeActivity extends AppCompatActivity {
     //int peco = 0; // peco==peacock
     public void peacock(View view) {
         if (peco == 0) {
+            peacockC.setCardElevation(15);
+            peacockC.setCardBackgroundColor(10000);
             if (player == null) {
                 player = MediaPlayer.create(this, R.raw.peacock); // resource of song
                 player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -171,6 +210,8 @@ public class HomeActivity extends AppCompatActivity {
             player.start();
             peco = 1;
         } else {
+            peacockC.setCardElevation(4);
+            peacockC.setCardBackgroundColor(0);
             if (player != null) {
                 peco=0;
                 player.release();
@@ -192,6 +233,8 @@ public class HomeActivity extends AppCompatActivity {
     public void crow(View view) {
         if (crow == 0) {
             if (player == null) {
+                CrowC.setCardElevation(15);
+                CrowC.setCardBackgroundColor(10000);
                 player = MediaPlayer.create(this, R.raw.crow); // resource of song
 //                player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 //                    @Override
@@ -208,6 +251,8 @@ public class HomeActivity extends AppCompatActivity {
             player.start();
             crow = 1;
         } else {
+            CrowC.setCardElevation(4);
+            CrowC.setCardBackgroundColor(0);
             if (player != null) {
                 crow=0;
                 player.release();

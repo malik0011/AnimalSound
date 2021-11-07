@@ -41,6 +41,7 @@
                 android:layout_marginRight="20dp">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/pg"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="25dp"
@@ -57,6 +58,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/LionC"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="25dp"
@@ -84,6 +86,7 @@
                 android:layout_marginRight="20dp">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/TigerC"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="25dp"
@@ -99,6 +102,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/HourseC"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="25dp"
@@ -126,11 +130,13 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
+                    android:id="@+id/shimpangiC"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="25dp"
                     android:elevation="4dp">
 
                     <ImageView
+
                         android:id="@+id/chimpanzee"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -141,6 +147,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
+                    android:id="@+id/peacockC"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="25dp"
                     android:elevation="4dp">
@@ -167,12 +174,14 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
+                    android:id="@+id/ravenC"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="25dp"
                     android:elevation="4dp">
 
                     <ImageView
                         android:id="@+id/raven"
+
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="raven"
@@ -182,6 +191,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
+                    android:id="@+id/crowC"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="25dp"
                     android:elevation="10dp">
@@ -296,6 +306,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
+                    android:id="@+id/CriketC"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="25dp"
                     android:elevation="4dp">
