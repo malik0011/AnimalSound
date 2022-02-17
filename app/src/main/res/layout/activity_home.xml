@@ -157,7 +157,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="peacock"
-                        android:src="@drawable/peacock" />
+                        android:src="@drawable/pck" />
 
                 </androidx.cardview.widget.CardView>
 
